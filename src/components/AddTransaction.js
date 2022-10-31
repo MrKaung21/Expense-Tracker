@@ -1,4 +1,4 @@
-import React,{ useState, useContext } from 'react'
+import React,{ useState, useContext, useEffect } from 'react'
 import { GlobalContext  } from '../context/GlobalState'
 
 const AddTransaction = () => {
@@ -6,7 +6,7 @@ const AddTransaction = () => {
   const [amount, setAmount] = useState(0)
 
   const { addTransaction, transactions } = useContext(GlobalContext)
-  
+  const localStore = JSON.parse(localStorage.getItem("transactions")) || []
 
   const onSubmit = e => {
     e.preventDefault()
@@ -21,6 +21,8 @@ const AddTransaction = () => {
     setText('')
     setAmount(0)
   }
+
+  
 
   return (
      <>
