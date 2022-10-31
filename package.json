@@ -1,7 +1,7 @@
 {
   "name": "expensetracker",
   "version": "0.1.0",
-  "homepage": "https://mrkaung21.github.io/expensetracker",
+  "homepage": "https://mrkaung21.github.io/Expense-Tracker/",
   "private": false,
   "dependencies": {
     "react": "^18.2.0",
